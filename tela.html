@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>document</title>
+    <style>
+        body {
+            margin: 0px;
+            background: black
+        }
+
+        header {
+            height: auto;
+            overflow: hidden;
+        }
+
+        #menu {
+            margin-left: 50em;
+        }
+
+        #background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            background: url(./img/fundo-1.jpg) no-repeat center;
+            background-size: cover;
+
+        }
+
+        #content {
+            position: center;
+            top: 20px;
+            padding: 30px;
+            color: rgb(246, 247, 246);
+            text-shadow: rgb(200, 200, 200);
+            font-family: arial;
+            text-align: center;
+        }
+
+        .navbar-brand {
+            float: left;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <video id="background" autoplay muted loop playbackRate="30%">
+            <source src="./photos/space_redim.mp4">
+        </video>
+        <div id="content">
+            <nav class="navbar navbar-expand-md" id="fundo">
+                <!-- Logotipo da Empresa -->
+                <a class="navbar-brand" href="#Logotipo">
+                    <img id="logotipo" src="./img/titulo-desktop.png" alt="icone">
+                </a>
+
+
+    </header>
+
+    <div id="content">
+        <H1>Historia</H1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, reprehenderit consequatur! Recusandae
+            voluptas architecto officiis fugit tempore dolorum ullam consequatur quaerat, aliquam fuga incidunt cum
+            explicabo dolorem. Consectetur, molestias sed!
+
+        </p>
+    </div>
+  
+    
+
+    <script>
+        let video = document.querySelector('video');
+
+        // Set the default playing speed
+        video.defaultPlaybackRate = 0.3
+
+        // Loading the video after setting 
+        video.load();
+
+        function increase() {
+
+            // Increasing the playing speed by 1
+            video.playbackRate += 1;
+        }
+
+        function decrease() {
+
+            // Decreasing the playing speed by 1
+            if (video.playbackRate > 1)
+                video.playbackRate -= 1;
+
+        }
+       
+    </script>
+</body>
+
+</html>
