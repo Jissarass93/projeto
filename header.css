@@ -3,7 +3,7 @@
 body { 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(./photos/o-foguete-do-onibus-espacial-voa-em-espaco-aberto-sobre-o-planeta-terra-a-noite-com-luzes-brilhantes-de-megacidades-nave-espacial-explora-o-espaco-conceito-de-missao-espaci.webp);
+  background-image: url(./photos/fundo.webp);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -36,7 +36,6 @@ body {
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
-
 
 }
 
@@ -73,7 +72,7 @@ body {
 } */
 .container .card {
     position: relative;
-    width: 280px;
+    width: 90%;
     height: 400px;
     margin: 30px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
